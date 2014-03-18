@@ -37,7 +37,7 @@ class Benchmark{
     
     tDespues = Time();
     
-    tTotal = tAntes.subtract(tDespues);
+    tTotal = new DateTime((tAntes.year-tDespues.year), (tAntes.month-tDespues.month), (tAntes.day-tDespues.day), (tAntes.hour-tDespues.day), (tAntes.minute-tDespues.minute), (tAntes.second-tDespues.second), (tAntes.millisecond-tDespues.millisecond));
     
     return tTotal;
   }
