@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>		
+		<link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+		<link rel="shortcut icon" href="imagenes/favicon.ico"/>
+		
+		<script type="text/javascript" src="scripts/scripts.js"></script>
+		<title>Página</title>
+		
+	</head>
+	
+		
+		
+	<body> 
+		
+		<div class="cuerpo">
+			<div class="cabecera">Soy la cabecera</div>
+			<div id="izq">
+				<div id="dCpu"class="opcion" onmouseover="generaCPU()">Cpu</div>
+				<div id="dMem" class="opcion" onmouseover="generaMem()">Memoria</div>
+				<div id="dGraficos" class="opcion">Graficos</div>
+				<div id="dGlobal"class="opcion">Global</div>
+			</div>
+			<div class="center">Soy el centro</div>
+						<div id="derecha" class="der">
+				<img src="imagenes/pc.png" usemap="mapa" alt="">
+				<map name="mapa">
+					<area href="#" onclick="creaVentana(1);" shape="polygon" coords="27,66,52,55,57,52,116,54,121,58,122,241,118,248,55,250,26,218,27,66" >
+					<area href="#" onclick="creaVentana(2);" shape="polygon" coords="130,39,134,34,334,50,337,54,346,188,288,192,281,187,137,194,131,190,130,39" >
+				</map>
+			
+			</div>
+			<div class="pie">Soy el pie</div>
+			
+		</div>
+		
+	</body>	
+	
+
+</html>

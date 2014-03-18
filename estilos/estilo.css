@@ -1,0 +1,149 @@
+.cuerpo{
+	margin: 20px auto 0px auto;
+	width:1000px;
+	height:528px;
+	background-color:#666666;
+}
+
+.cabecera{
+	width:100%;
+	height:150px;
+	background-color:#AFAFAF;
+	float:left;
+}
+
+#izq{
+	width:20%;
+	height:328px;
+	background-color:#E6FAFA;
+	float:left;
+	clear:left;
+}
+
+.center{
+	width:43%;
+	height:328px;
+	background-color:#FAFAFA;
+	float:left;
+}
+
+.der{
+	width:37%;
+	height:328px;
+	background-color:#E6E6E6;
+	float:left;
+}
+
+.pie{
+	width:100%;
+	height:50px;
+	background-color:#E6E6FA;
+	float:left;
+	clear:left;
+}
+
+
+
+
+
+.navi { list-style:none; margin:0; padding:0; }
+
+.navi li { margin:2px; padding:0; }
+
+.navi li a {
+	display:block;
+	width:120px;
+	padding:4px 0; 
+	text-align:center;
+	font-size:16px;
+	color:white;
+	background-color:#483D8B;
+	border-left:10px solid #666666;
+}
+
+.navi li a:hover {
+	color:#E6E6FA; background-color:#9370DB; border-left-color:#666666;
+}
+
+
+.opcion{
+	width:120px;
+	height:30px;
+	border-radius:2px 4px 2px 4px;
+	font-size:25px;
+	color:white;
+	text-align:center;
+	background-color:#666666;
+	margin:7px 6px 7px 40px;
+} 
+	.opcion:hover{
+		width:140px;
+		height:40px;
+		border-radius:4px 2px 4px 2px;
+		font-size:25px;
+		color:#666666;
+		text-align:center;
+		background-color:black;
+		margin:3px 6px 7px 30px;
+	}
+	
+#ddCpu{
+	width:200px;
+	height:200px;
+	position:relative;
+	top:-100px;
+	left:135px;
+	background-color:#666666;
+	text-align:Center;
+	color:white;
+	
+}
+#ddMem{
+	width:200px;
+	height:100px;
+	position:relative;
+	top:-100px;
+	left:135px;
+	background-color:#E6FAFA;
+	text-align:Center;
+}
+#dGraficos{
+	
+}
+#dGlobal{
+	
+}
+
+
+#ventana1{
+	width: 430px;
+	height:328px;
+	position:absolute;
+	top:150px;
+	left:400px;
+	border-radius: 10px;
+	background-color: #FFE4B5;
+	background-image: url("../imagenes/pc1.png");
+
+}
+
+#ventana2{
+	width: 430px;
+	height:328px;
+	position:absolute;
+	top:150px;
+	left:400px;
+	border-radius: 10px;
+	background-color: #FFE4B5;
+	background-image: url("..imagenes/pc2.png");
+
+}
+
+#x{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	border: 1px solid black;
+	cursor: pointer;
+	background-image:url("../imagenes/x.png");
+}
