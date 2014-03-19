@@ -54,8 +54,64 @@ class Benchmark{
   }
   
   
-  void ComenzarBenchmark(){
-    DateTime tiempoProcesador = Procesador();
+  /*
+   * @brief Función que hará el benchmark a la memoria
+   * @return Retorna un DateTime con el tiempo que ha tardado en ejecutar los comandos de la memoria
+  */
+  DateTime Memoria(){
+    DateTime tTotal;
+    int ejecuciones = 1000000;
+    Random r = new Random();
+    
+    tAntes = Time();
+    
+    //Parte que aumenta la memoria RAM
+    
+    tDespues = Time();
+    
+    tTotal = SubstraerTiempos(tAntes, tDespues);
+        
+    return tTotal;
+  }
+  
+  
+  /*
+   * @brief Función que hará el benchmark los graficos
+   * @return Retorna un DateTime con el tiempo que ha tardado en ejecutar la parte grafica
+  */
+  DateTime Graficos(){
+    DateTime tTotal;
+    int ejecuciones = 1000000;
+    Random r = new Random();
+    
+    tAntes = Time();
+    
+    //Parte que aumenta la grafica
+    
+    tDespues = Time();
+    
+    tTotal = SubstraerTiempos(tAntes, tDespues);
+        
+    return tTotal;
+  }
+  
+  /*
+   * @brief 
+  */
+  DateTime Global(){
+    DateTime tTotal;
+    int ejecuciones = 1000000;
+    Random r = new Random();
+    
+    tAntes = Time();
+    
+    //Código
+    
+    tDespues = Time();
+    
+    tTotal = SubstraerTiempos(tAntes, tDespues);
+        
+    return tTotal;
   }
   
   
