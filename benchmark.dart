@@ -18,7 +18,7 @@ class Benchmark{
     DateTime ahora = new DateTime.now();
     return ahora;
   }
-  
+   
   /*
      * @brief Función que realiza la diferencia entre dos horas
      * @param d1 Datetime con la hora antes de ejecutar el benchmark
