@@ -20,6 +20,17 @@ class Benchmark{
   }
   
   /*
+     * @brief Función que realiza la diferencia entre dos horas
+     * @param d1 Datetime con la hora antes de ejecutar el benchmark
+     * @param d2 Datetime con la hora después de ejecutar el benchmark
+     * @return Retorna un DateTime resultante de la recta de d1 y d2
+  */
+  DateTime SubstraerTiempos(DateTime d1, DateTime d2){
+    DateTime nuevo  = new DateTime((d1.year-d2.year), (d1.month-d2.month), (d1.day-d2.day), (d1.hour-d2.day), (d1.minute-d2.minute), (d1.second-d2.second), (d1.millisecond-d2.millisecond));
+    return nuevo;
+  }
+  
+  /*
    * @brief Función que hará el benchmark al procesador
    * @return Retorna un DateTime con el tiempo que ha tardado en ejecutar los comandos el procesador
    */
@@ -37,9 +48,14 @@ class Benchmark{
     
     tDespues = Time();
     
-    tTotal = new DateTime((tAntes.year-tDespues.year), (tAntes.month-tDespues.month), (tAntes.day-tDespues.day), (tAntes.hour-tDespues.day), (tAntes.minute-tDespues.minute), (tAntes.second-tDespues.second), (tAntes.millisecond-tDespues.millisecond));
-    
+    tTotal = SubstraerTiempos(tAntes, tDespues);
+        
     return tTotal;
+  }
+  
+  
+  void ComenzarBenchmark(){
+    DateTime tiempoProcesador = Procesador();
   }
   
   
