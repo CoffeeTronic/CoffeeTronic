@@ -9,43 +9,6 @@ function eliminarTo(ele){
 
 }
 
-//el padre es una cadenaa con el id del padre paa 
-function crearVentanaR(padre,nomVentana){
-	var cadena,vAux;
-	
-	if(!document.getElementById(nomVentana)){
-		cadena='<center><div id="'+nomVentana+'"> <br><br><br><br>Yo me llamo ralph<br><br> <div id="dbtnCerrar" onmouseover="eliminar(\''+nomVentana+'\')"></div></div></center>';
-		document.getElementById(padre).innerHTML += cadena;
-	}
-	else{
-		vAux=nomVentana+1;
-		if(!document.getElementById(vAux)){
-			cadena='<center><div id="'+vAux+'"> <br><br><br><br>Yo me llamo ralph<br><br> <div id="dbtnCerrar" onmouseover="eliminar(\''+vAux+'\')"></div></div></center>';
-			document.getElementById(padre).innerHTML += cadena;
-		}
-		else{
-			vAux=nomVentana+2;
-			if(!document.getElementById(vAux)){
-				cadena='<center><div id="'+vAux+'"> <br><br><br><br>Yo me llamo ralph<br><br> <div id="dbtnCerrar" onmouseover="eliminar(\''+vAux+'\')"></div></div></center>';
-				document.getElementById(padre).innerHTML += cadena;
-			}
-			else{
-				vAux=nomVentana+3;
-				if(!document.getElementById(vAux)){
-					cadena='<center><div id="'+vAux+'"> <br><br><br><br>Yo me llamo ralph<br><br> <div id="dbtnCerrar" onmouseover="eliminar(\''+vAux+'\')"></div></div></center>';
-					document.getElementById(padre).innerHTML += cadena;
-				}
-				else{
-					if(!document.getElementById("dBart")){
-						cadena='<div id="dBart" onclick="crearVentana(\'cen\',\'testBart\')"></div>';
-						document.getElementById(padre).innerHTML += cadena;
-						
-					}
-				}
-			}
-		}
-	}
-} 
 
 function crearVentana(padre,nomVentana){
 	var cadena;
@@ -55,7 +18,7 @@ function crearVentana(padre,nomVentana){
 		document.getElementById(padre).innerHTML += cadena;
 	}
 } 
-
+/*
 function generaCPU(){
 	var cadena;
 	//document.write("tu puta madre");
@@ -81,7 +44,7 @@ function generaMem(){
 		eliminar("ddCpu");
 	}
 }
-
+*/
 
 function eliminar(elemento){
 	var obj;
